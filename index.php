@@ -19,5 +19,6 @@
 		$HitungJumlahUser+=1;
 		
 	}
+
 	echo $HitungJumlahUser;
 ?>
