@@ -1,18 +1,18 @@
 <?php
-	$host = '172.18.0.2';
-	$user = 'root';
-	$pass = 'root';
-	$db = 'redlock';
+	$Uhost = '172.18.0.2';
+	$username = 'root';
+	$password = 'root';
+	$dataB = 'redlock';
 
-	$conn = mysqli_connect($host, $user, $pass, $db);
+	$connected = mysqli_connect($Uhost, $username, $password, $dataB);
 
-	if (!$conn){
+	if (!$connected){
 		echo "Connection Failed!";
 		die();
 	}
 
 
-	$query = mysqli_query($conn, "SELECT * FROM users");
+	$Q = mysqli_query($connected, "SELECT * FROM users");
 	$HitungJumlahUser = 0;
 
 	while ($row = mysqli_fetch_array($query)) {
