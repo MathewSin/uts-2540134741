@@ -15,7 +15,7 @@
 	$Q = mysqli_query($connected, "SELECT * FROM users");
 	$HitungJumlahUser = 0;
 
-	while ($row = mysqli_fetch_array($query)) {
+	while ($end = mysqli_fetch_array($Q)) {
 		$HitungJumlahUser+=1;
 		
 	}
